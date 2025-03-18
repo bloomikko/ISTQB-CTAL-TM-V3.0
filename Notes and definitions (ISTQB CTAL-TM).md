@@ -2,7 +2,7 @@
 ## **breadth-first**
 one test for each risk is assigned the highest priority, whereas the other tests are prioritized by their risk level coverage, used for gaining overall view as early as possible
 
-# **Déjà vu**  
+## **Déjà vu**  
 same set of risks are raised for each project, neglecting them in the long run
 
 ## **depth-first**
