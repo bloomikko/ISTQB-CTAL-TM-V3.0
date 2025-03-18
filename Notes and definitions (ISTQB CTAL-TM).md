@@ -1,4 +1,7 @@
 # Notes and definitions / ISTQB Certified Tester Advanced Level Test Management (CTAL-TM) v3.0
+## **analytical-based test process improvement**  
+identifying problems in testing by using the data from the project or team itself &rarr; deriving the improvements from analysis, many times quantitative approaches are used to identify problems as using only qualitative approaches can result in wrong recommendations which is not supported by the data
+
 ## **breadth-first**
 one test for each risk is assigned the highest priority, whereas the other tests are prioritized by their risk level coverage, used for gaining overall view as early as possible
 
@@ -10,6 +13,15 @@ starting the test execution from highest risk level
 
 ## **functional testing**
 evaluates the functions that a component or system should perform, checking the functional completeness, correctness and appropriateness
+
+## **goal question metric (GQM)**  
+- analytical approach for test process improvement, a framework to define and analyze metrics which are tailored to stakeholder information needs
+- measurement goals contain a quality aspect of an object that is measured for a particular purpose, perspective and context
+- these goals are then formed into questions defining the quality aspect from stakeholder point of view, after which the metrics are selected to provide necessary information to answer the questions
+- example:
+  - goal, an object or entity: measurements include products, processes and resources
+  - question used to assess the goals: is the current performance satisfactory, is it improving, is the improvement enough?
+  - metric, every question is assessed with the metrics: for example, lines of code, module/program size, level of user satisfaction
 
 ## **hybrid software development model**  
 integrates elements from traditional sequential approaches and Agile practices
@@ -31,6 +43,14 @@ improvement process for testing, can be used in either organizational or project
 ## **keen beginnings**  
 risk-based test approach is neglected when high short-term pressure to succeeding arises
 
+## **measures, metrics and indicators**  
+- analytical approach for test process improvement, a quantitative method to assess how well the test process is performed
+- key attributes to be measured include effectiveness, efficiency and predictability &rarr; one or several metrics can be selected to assess each attribute, collected and analyzed data can be used to identify improvements
+
+## **model-based test process improvement**  
+- test improvement model is used to improve test processes, usually on organizational level but can be applied on project level
+- the improvements are introduced by comparing the testing against external best practices
+
 ## **non-functional testing**  
 evaluating other than functional characteristics, "how well the system behaves", includes for example performance, compatibility, usability and security reliability
 
@@ -38,7 +58,14 @@ evaluating other than functional characteristics, "how well the system behaves",
 potential threats or failures that can affect the quality of your project deliverables, processes or outcomes
 
 ## **retrospective**  
-event where the test team measures how well risk-based testing realized the benefits
+- meeting where the team reviews methods, collects lessons learned and decides the changes and actions to improve
+- in sequential models, retrospectives are part of test completion, whereas in Agile development, retrospectives are held at the end of each iteration
+- retrospective steps:
+  - *introduction*: goal and agenda are reviewed
+  - *collecting data*: data about what happened during the iteration or project, can me qualitative such as timeline of key events or quantitative such as test progress, defects and effectiveness
+  - *deriving improvements*: collected data is analyzed to understand the current situation and generating improvement suggestions
+  - *deciding on improvement actions*: improvement actions are derived and prioritized by creating an improvement plan, also goals and relevant metrics can be defined to measure the impact of actions on the identified problems
+  - *close retrospective*: retrospective itself is reviewed
 
 ## **risk analysis**  
 identifying and assessing the potential impact and likelihood of product risks
@@ -88,6 +115,10 @@ several activities:
 - quality risk analysis results are used in test planning to focus the testing towards correct areas with correct techniques
 - risk analysis guide the selection of test conditions in test analysis
 - risk-based prioritization guides the sequences of test execution activity
+
+## **root cause analysis**  
+- analytical approach for test process improvement, identifies the solutions to remove the problem causes instead of just addressing the obvious symptoms
+- for example, a set of defects can be collected which are analyzed and compiled into clusters &rarr; using cause-effect diagrams to identify and address by improvements the root causes of these defects
 
 ## **S.M.A.R.T. goal methodology**
 methodology for defining project test objectives and exit criteria
@@ -182,6 +213,10 @@ ensuring that the test process is well-defined, adaptable to changes and results
 - *test control*:
   - reacting to monitoring results accordingly in response to new insights, challenges and evolving project dynamics &rarr; being able to change
   - defining the quality gates that are followed in the testing process
+ 
+## **Test Maturity Model integration (TMMi)**  
+- model for improving test processes, consists of five maturity levels
+- all levels (except first) have test process areas and improvement goals, also contains (sub-)practices and examples
 
 ## **test monitoring**  
 ongoing activity: tracking test progress, results and deviations from planned testing, produces source material for test controlling
@@ -235,14 +270,13 @@ four different approaches for testing, test management activities for each type:
 - *black-box testing management*: ensuring that tests cover all user scenarios and business requirements, collecting the feedback from stakeholders to improve black-box testing approaches
 - *white-box testing management*: overseeing the use of code coverage tools, ensuring that technical insights are taken care in test planning process
 
-## **experience-based testing**
-## **incremental development model**
-## **iterative development model**
-## **sequential development model**
-## **Test Maturity Model integration**
-## **test policy**
-## **TPI NEXT**
-## **goal question metric (GQM)**
-## **indicator**
-## **measure**
-## **metric**
+## **TPI NEXT**  
+- model for improving test processes, consists of 16 key areas
+- each area contains a specific test process aspect, such as strategy, metrics, tools and environment
+- each area has four maturity levels, also areas contain checkpoints for maturity assessment
+
+## **experience-based testing**  
+## **incremental development model**  
+## **iterative development model**  
+## **sequential development model**  
+## **test policy**  
