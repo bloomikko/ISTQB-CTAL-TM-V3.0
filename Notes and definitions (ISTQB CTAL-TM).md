@@ -2,6 +2,9 @@
 ## **breadth-first**
 one test for each risk is assigned the highest priority, whereas the other tests are prioritized by their risk level coverage, used for gaining overall view as early as possible
 
+# **Déjà vu**  
+same set of risks are raised for each project, neglecting them in the long run
+
 ## **depth-first**
 starting the test execution from highest risk level
 
@@ -17,14 +20,16 @@ integrates elements from traditional sequential approaches and Agile practices
   - evaluating pros and cons of hybrid approach
   - ensuring adeptness of combining different methodologies
 
+## **IDEAL**
+improvement process for testing, can be used in either organizational or project level
+- *I = initiating*: at the start of the improvement process, objectives and scope of the process improvements are agreed upon by all stakeholders
+- *D = diagnosing*: current situation is assessed, usually against standardized framework (model-based test process improvement) or analyzing against specific metrics (analytical-based test process improvement)
+- *E = establishing*: plan with all actions in prioritized order to improve the process
+- *A = acting*: implementation of the plan, for example deploying, training and piloting the new processes
+- *L = learning*: after deployment, learning what benefits were achieved, what did (not) work and acting on this information
+
 # **keen beginnings**  
 risk-based test approach is neglected when high short-term pressure to succeeding arises
-
-# **Déjà vu**  
-same set of risks are raised for each project, neglecting them in the long run
-
-# **stakeholder churn**  
-stakeholders change over time and constant risk analysis is lacked &rarr; risk analysis should not be done only in the beginning of testing process
 
 ## **non-functional testing**  
 evaluating other than functional characteristics, "how well the system behaves", includes for example performance, compatibility, usability and security reliability
@@ -84,8 +89,19 @@ several activities:
 - risk analysis guide the selection of test conditions in test analysis
 - risk-based prioritization guides the sequences of test execution activity
 
+## **S.M.A.R.T. goal methodology**
+methodology for defining project test objectives and exit criteria
+- *S = specific*: clear and ambiguous
+- *M = measurable*: quantifiable and have specific criteria to measure progress in order to determine if it has been reached
+- *A = achievable*: feasible when considering resources, timeframe and capabilities
+- *R = relevant*: aligned with other project objectives
+- *T = timely*: well-defined specific timeframe and deadline for completion
+
 ## **software development lifecycle (SDLC)**  
 high-level representation of software development process, various ones exist
+
+# **stakeholder churn**  
+stakeholders change over time and constant risk analysis is lacked &rarr; risk analysis should not be done only in the beginning of testing process
 
 ## **stakeholder/power-interest matrix**  
 tool for assessing the stakeholders' expertise, interest, influence and the interconnections between these attributes, contains four quadrants:
@@ -93,6 +109,17 @@ tool for assessing the stakeholders' expertise, interest, influence and the inte
 - *latents (high influence, low interest)*: although lower interest, their decisions remain critical for resource allocation and high-level project direction
 - *defenders (low influence, high interest)*: useful for qualitative feedback, usually kept engaged through regular updates and discussions
 - *apathetics (low influence, low interest)*: can provide unique insights if for example updated on significant milestones
+
+## **test approach**  
+- not an one-size-fits-all solution: requires careful consideration towards test levels, types and techniques
+- factors to be considered when choosing the appropriate approach:
+  - *domain*: for which the product will be created/modified, for example medicine and insurance fields vary a lot so therefore their own nuances must be considered
+  - *organizational goals and overarching quality characteristics*: these can affect the approach a lot, for example as one organization can focus on value of testing, whereas another can emphasize efficiency of defect detection - balancing between these is crucial, but the organization can still emphasize some areas more than others
+  - *project goals and type of project*: for example, customer specific versus market oriented product requires different testing approaches
+  - *test resources*: for example, experience-based testing requires good domain knowledge, whereas mobile testing requires testing on different devices and operating systems
+  - *SDLC used for the project*: for example, software lifecycle with CI/CD approach requires more automation, whereas traditional models have their own nuances
+  - *interfaces with other system*: if the test item is integrated to one system versus multiple ones, the test approach must be aligned
+  - *availability of test data*: does the project need anonymised test data, or does it handle sensitive information such as social security numbers etc.?
 
 ## **test completion**  
 - handling the test artifacts, evaluating the test process (for example, seeking improvements) and product, communicating the test closure to stakeholders
@@ -133,14 +160,10 @@ work product being tested
   - *system integration testing*: ensuring the scope and objectives of system integration testing are clear, having oversight of the progress, outcomes and issue management
   - *system testing*: allocating the resources, selecting the tools and scheduling the testing (in Agile projects, the system testing is integrated with iterative story testing, ensuring a continuous testing)
   - *acceptance testing*: confirming the fulfillment of acceptance criteria with stakeholders, plan testing activities, coordinate acceptance testing logistics, facilitating tests at the customer's site and ensuring the quality standards outside development context
-
-## **test type**  
-- four different approaches for testing
-- test management activities for each type:
-  - *functional testing management*: crafting a test strategy that aligns with functional requirements and project objectives, coordinating resources for functional aspects of the system
-  - *non-functional testing management*: establishing performance benchmarks and managing them during testing, overseeing tests that ensure non-functional standards such as security or reliability
-  - *black-box testing management*: ensuring that tests cover all user scenarios and business requirements, collecting the feedback from stakeholders to improve black-box testing approaches
-  - *white-box testing management*: overseeing the use of code coverage tools, ensuring that technical insights are taken care in test planning process
+ 
+## **test process improvement**
+- at least 30-40% of project costs account for testing &rarr; optimizing the effectiveness and efficiency is necessary
+- can emerge from for example dissatisfaction of current test results, unexpected defects, changing circumstances or benchmark results
 
 ## **test management activities for various software development lifecycle models**  
 - sequential models rely more on early planning, estimations and predominant choices &rarr; not very flexible and reactive
@@ -163,8 +186,15 @@ ensuring that the test process is well-defined, adaptable to changes and results
 ## **test monitoring**  
 ongoing activity: tracking test progress, results and deviations from planned testing, produces source material for test controlling
 
+## **test objective**
+- should address aspects of quality and quantity and be measurable or evaluable
+- examples:
+  - reaching exit criteria in defined timeframe
+  - complying rules, regulations and standards of specific industry
+  - enhancing test automation, for example by measuring the number of tests or percentage how much the tests cover the system
+
 ## **test plan**
-describes the objectives, resources and processes of a test project
+describes the objectives, resources and processes of a test project, should always contain a scope, objectives and exit criteria
 
 ## **test planning**  
 - defining test objectives, approach, scope, resources, schedule, deliverables and participants/stakeholders
@@ -195,28 +225,24 @@ includes seven activities, can be applied in various levels such as project, pro
 - *operations team*: ensures the system's readiness for production
 - *customers and users*: customers purchase the product, users directly utilize it
 
+## **test strategy**  
+describes the approach to testing in specific context to meet the organization's (quality and testing) objectives
+
+## **test type**  
+four different approaches for testing, test management activities for each type:
+- *functional testing management*: crafting a test strategy that aligns with functional requirements and project objectives, coordinating resources for functional aspects of the system
+- *non-functional testing management*: establishing performance benchmarks and managing them during testing, overseeing tests that ensure non-functional standards such as security or reliability
+- *black-box testing management*: ensuring that tests cover all user scenarios and business requirements, collecting the feedback from stakeholders to improve black-box testing approaches
+- *white-box testing management*: overseeing the use of code coverage tools, ensuring that technical insights are taken care in test planning process
+
 ## **experience-based testing**
 ## **incremental development model**
 ## **iterative development model**
 ## **sequential development model**
-## **S.M.A.R.T. goal methodology**
 ## **Test Maturity Model integration**
-## **test objective**
 ## **test policy**
-## **test process improvement**
-
-## **test approach**  
-- not an one-size-fits-all solution: requires careful consideration towards test levels, types and techniques
-- factors to be considered when choosing the appropriate approach:
-  - *domain*: for which the product will be created/modified, for example medicine and insurance fields vary a lot so therefore their own nuances must be considered
-  - *organizational goals and overarching quality characteristics*: these can affect the approach a lot, for example as one organization can focus on value of testing, whereas another can emphasize efficiency of defect detection - balancing between these is crucial, but the organization can still emphasize some areas more than others
-
-## **test strategy**  
-describes the approach to testing in specific context to meet the organization's (quality and testing) objectives
-
 ## **TPI NEXT**
 ## **goal question metric (GQM)**
-## **IDEAL**
 ## **indicator**
 ## **measure**
 ## **metric**
