@@ -28,7 +28,7 @@ improvement process for testing, can be used in either organizational or project
 - *A = acting*: implementation of the plan, for example deploying, training and piloting the new processes
 - *L = learning*: after deployment, learning what benefits were achieved, what did (not) work and acting on this information
 
-# **keen beginnings**  
+## **keen beginnings**  
 risk-based test approach is neglected when high short-term pressure to succeeding arises
 
 ## **non-functional testing**  
@@ -59,7 +59,7 @@ categorization of risks (by product/project risk, quality characteristics), dete
     - *Pragmatic Risk Analysis and Management (PRAM)*
     - *Product Risk Management (PRISMA)*
 
-**risk identification**  
+## **risk identification**  
 - stakeholders' process of identifying quality risks through several techniques: expert interviews, independent assessments, retrospectives, risk workshops, brainstorming, checklists and referring to past experience
 - ensuring involving the broadest possible sample of stakeholders is vital: it must be ensured that all relevant stakeholders have a chance to participate
 - often also produces by-products which are not product risks, such as general issues in the project or flaws in documentation
@@ -100,7 +100,7 @@ methodology for defining project test objectives and exit criteria
 ## **software development lifecycle (SDLC)**  
 high-level representation of software development process, various ones exist
 
-# **stakeholder churn**  
+## **stakeholder churn**  
 stakeholders change over time and constant risk analysis is lacked &rarr; risk analysis should not be done only in the beginning of testing process
 
 ## **stakeholder/power-interest matrix**  
