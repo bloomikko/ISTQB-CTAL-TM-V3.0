@@ -11,6 +11,9 @@ same set of risks are raised for each project, neglecting them in the long run
 ## **depth-first**
 starting the test execution from highest risk level
 
+## **experience-based testing**  
+testing which relies on tester's past experiences, skills and intuition &rarr; useful for detecting test cases which can easily slip through rigid test methodologies
+
 ## **functional testing**
 evaluates the functions that a component or system should perform, checking the functional completeness, correctness and appropriateness
 
@@ -39,6 +42,12 @@ improvement process for testing, can be used in either organizational or project
 - *E = establishing*: plan with all actions in prioritized order to improve the process
 - *A = acting*: implementation of the plan, for example deploying, training and piloting the new processes
 - *L = learning*: after deployment, learning what benefits were achieved, what did (not) work and acting on this information
+
+## **incremental development model**  
+SDLC model where the software is built gradually &rarr; for example a few features are fully developed, afterwards few more features are added and so on until the product is completely ready, requires a clear completion goal
+
+## **iterative development model**  
+SDLC model where the development happen in smaller cycles with constant feedback loop &rarr; for example, one feature might not be fully completed in one iteration but the work is continued in the next cycle with the feedback from previous cycle's results
 
 ## **keen beginnings**  
 risk-based test approach is neglected when high short-term pressure to succeeding arises
@@ -119,6 +128,9 @@ several activities:
 ## **root cause analysis**  
 - analytical approach for test process improvement, identifies the solutions to remove the problem causes instead of just addressing the obvious symptoms
 - for example, a set of defects can be collected which are analyzed and compiled into clusters &rarr; using cause-effect diagrams to identify and address by improvements the root causes of these defects
+
+## **sequential development model**  
+SDLC model where the development is strictly divided into non-overlapping segments which follow each other
 
 ## **S.M.A.R.T. goal methodology**
 methodology for defining project test objectives and exit criteria
@@ -241,7 +253,10 @@ describes the objectives, resources and processes of a test project, should alwa
   - *defining test approach, estimating and allocating test resources*:
     - approach: basis on organizational test strategy, regulatory standards or any constraints given by the project
     - resources: making sure that required test resources such as staff, tools, environments and data are provided for test activities
-  - **establish the test plan**: plan accepted by all stakeholders 
+  - **establish the test plan**: plan accepted by all stakeholders
+ 
+## **test policy**  
+high-level document of the organization &rarr; defines testing vision, goals and principles in organizational level
 
 ## **test process**  
 includes seven activities, can be applied in various levels such as project, program or portfolio, each level has its own test plan (**bolded** are emphasised by the syllabus):  
@@ -263,6 +278,33 @@ includes seven activities, can be applied in various levels such as project, pro
 ## **test strategy**  
 describes the approach to testing in specific context to meet the organization's (quality and testing) objectives
 
+## **test tool**  
+- either business (commercial, open source or custom type) or technical tools, administrated by test manager
+- examples of evaluating the tool: improvement opportunities, compatibility with current tools in the organization, how does the tool integrate to SDLC, proof-of-concept evaluation
+- should have guidelines, training, incremental rollout and owner
+
+## **test tool cost-benefit analysis**  
+made to ensure the positive ROI, must consider the (non-)recurring activities and costs such as initial or recurring licensing costs, integrating, training and maintenance - also opportunity costs (time spent on the tool-related activities instead of spending it on the actual testing) must be considered
+
+## **test tool decision aspects**  
+- *regulations and security*: for example, commercial tools could be best for safety-critical software as they usually met the required standards and certifications
+- *financial aspects*: the tool can have one-time or running license costs, also training and maintenance costs must be considered
+- *stakeholder requirements*: custom tools most likely meet all the requirements by relevant stakeholders if commercial and open-source tools are not sufficient enough
+- *existing software landscape and tool strategy*: locked vendors, integrated systems and regulations might dictate what tools are appropriate for the organization
+
+## **test tool lifecycle**  
+- four stages:
+  - *acquisition*: decision to acquire the tool has been made, afterwards the tool owner must be determined &rarr; they make the usage decisions
+  - *support and maintenance*: tool owner is accountable for this stage &rarr; maintenance can be assigned for example to one person who works as an admin
+  - *evolution*: tool suitability must be maintained in time &rarr; changes in environment, business needs or vendor decisions can render the tool useless or other changes are needed
+  - *retirement*: essential to preserve the data produced by the tool
+ 
+## **test tool metrics**  
+for example, test management tools can measure test execution statuses, requirements management tool have traceability on requirements coverage of tests, defect management tools can measure status, severity and priority
+
+## **test tool selection viewpoints**  
+the tool should be considered from various viewpoints of different stakeholders: for example, the senior management is interested in positive return of interest (ROI), whereas the tool users appreciate usability
+
 ## **test type**  
 four different approaches for testing, test management activities for each type:
 - *functional testing management*: crafting a test strategy that aligns with functional requirements and project objectives, coordinating resources for functional aspects of the system
@@ -275,8 +317,15 @@ four different approaches for testing, test management activities for each type:
 - each area contains a specific test process aspect, such as strategy, metrics, tools and environment
 - each area has four maturity levels, also areas contain checkpoints for maturity assessment
 
-## **experience-based testing**  
-## **incremental development model**  
-## **iterative development model**  
-## **sequential development model**  
-## **test policy**  
+## **anomaly**  
+## **defect**  
+## **defect report**  
+## **defect workflow**  
+## **failure**  
+## **metric**  
+## **test estimation**  
+## **test objective**  
+## **test progress**  
+## **planning poker**  
+## **three-point estimation**  
+## **Wideband Delphi**  
