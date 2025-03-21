@@ -1,16 +1,14 @@
-# International Software Testing Qualifications Board (ISTQB) Certified Tester Foundation Level (CTFL) v4.0 notes
-In this repository, you can find my personal notes and definitions for the Certified Tester Foundation Level (CTFL) exam v4.0. The syllabus of the certification basically covers everything about testing fundamentals from basic definitions to applying them to practice, so I made my own "quick glance" file for studying.
+# International Software Testing Qualifications Board (ISTQB) Advanced Level Test Management (CTAL-TM) v3.0 notes
+In this repository, you can find my personal notes and definitions for the ISTQB Advanced Level Test Management (CTAL-TM) v3.0. The certification and its syllabus is part of ISTQB's Advanced certification series, with an emphasis on test management and its activities. My personal study technique includes reading the syllabus material and making at the same time my own personal notes about it, which I use for revising for the exam.
 
-Please note that this repository's information is based on **v4.0** syllabus &rarr; it can and most likely will alter in the future - these materials most likely will become obsolete over time. I still hope these notes offer some assistance - good luck with the exam!
+Please note that this repository's information is based on **v3.0** syllabus &rarr; it can and most likely will alter in the future - these materials most likely will become obsolete over time. I still hope these notes offer some assistance - good luck with the exam!
 
-**[ISTQB's resources, including syllabus and a practice exam](https://www.istqb.org/certifications/certified-tester-foundation-level)**
+**[ISTQB's resources, including syllabus and a practice exam](https://www.istqb.org/certifications/certified-tester-advanced-level-test-management-ctal-tm-v3-0/)**
 
 ## Practice exams
-**Please note that some of the exams below most likely reflect previous syllabi, thus containing questions which are not in the scope of v4.0 syllabus.**
+**Please note that these materials likely reflect the previous syllabi as the version 3.0 is relatively recent, thus containing questions which are not in the scope of v3.0 syllabus.**
 
-- [Exam Topics' practice exam](https://www.examtopics.com/exams/istqb/ctfl-2018/)
-- [Guru99's materials, including three practice exams](https://www.guru99.com/istqb.html)
-- [Patshala.com, the exam divided to separate categories](https://istqb.patshala.com/tests/)
-- [ProProfs' quizzes](https://www.proprofs.com/quiz-school/topic/istqb)
-- [q-leap, 15 questions](https://q-leap.eu/istqb-exam-practice-test/)
-- [Try QA, PDFs of questions](http://tryqa.com/istqb-dumps-download-mock-tests-and-sample-question-papers/)
+- [Exam Topics' practice questions](https://www.examtopics.com/exams/istqb/ctal-tm/)
+- [IT Exam's practice questions](https://www.itexams.com/info/CTAL-TM)
+- [Process Exam's ten practice questions](https://www.processexam.com/istqb/istqb-ctal-tm-certification-exam-sample-questions)
+- [Software Testing Help's 20 practice questions](https://www.softwaretestinghelp.com/istqb-ctal-tm-sample-paper/)
