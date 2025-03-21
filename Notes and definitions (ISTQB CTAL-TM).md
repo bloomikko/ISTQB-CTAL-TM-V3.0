@@ -2,8 +2,107 @@
 ## **analytical-based test process improvement**  
 identifying problems in testing by using the data from the project or team itself &rarr; deriving the improvements from analysis, many times quantitative approaches are used to identify problems as using only qualitative approaches can result in wrong recommendations which is not supported by the data
 
+## **anomaly**  
+situation in testing which is unexpected, usually results in defect
+
+## **appraisal**  
+expense for preventing a defect to never reach a customer
+
+## **average savings per defect**  
+cost of quality per defect, formula: average of external failure costs - (average appraisal costs + average of internal failure costs), example:
+- *average appraisal costs per defect*: $500
+- *average of internal failure costs per defect*: $200
+- *average of external failure costs per defect*: $4000
+&rarr; $4000 - ($500 + $200) = $3300
+
 ## **breadth-first**
 one test for each risk is assigned the highest priority, whereas the other tests are prioritized by their risk level coverage, used for gaining overall view as early as possible
+
+## **cost of quality**  
+quantified total cost of quality-related efforts and defects, four categories of project and operational costs (usually appraisal and internal failure costs are much lower than external failure costs):
+- *defect prevention costs*: all activities related to preventing poor quality, for example developer training costs regarding maintainable code or reviewing the test basis as early as possible
+- *appraisal costs*: all activities related to defect detection, such as static and dynamic testing and reviewing work products
+- *internal failure costs*: all costs related to reactive activities, such as fixing defects and proving workarounds
+- *external failure costs*: all costs which have emerged to remedy for example quality issues afterwards, such as legal costs or supporting because of defective product being delivered
+
+## **cross-functional defect management**  
+defect management is handled by predetermined team of different experts and quality assurance is everyone's responsibility, this defect management committee works together instead of just one or two responsibles
+
+## **defect**  
+the outcome of deviation from the actual results when comparing to expected ones
+
+## **defect lifecyle**  
+detecting (for example with static testing) and removing defects
+
+## **defect management**  
+activities beginning after observing differing actual results from expected results, allows the stakeholders to gain insight into the state of a project, and also crucial for deciding which defects will be fixed
+
+## **defect management in Agile teams**  
+often very informal (formality varies on attributes such as geolocal distribution of team members, maturity of the team and risks of the product) and may lack defect reports, should still be done in these cases:
+- *defects block other current sprint activities and cannot be immediately fixed*
+- *defects that cannot be resolved in the same iteration*
+- *defects which require cooperation with other teams*
+- *defects must be solved by a supplier*
+- *defects where a defect report is explicitly requested*
+
+## **defect management in hybrid software development**  
+- *alignment of defect tools*: ideally every team should use the same tool and practices, but different SDLCs can prevent this &rarr; these should be synchronized
+- *prioritization of defects*: Agile teams should hold defect management meetings more often due to faster development
+- *alignment and transparency of the test plan for new development and defect fixes*: every team's work should align to the same project plan, no matter what SDLC the teams use
+
+## **defect metrics**  
+used to monitor defect detection and resolution, identify areas of different defect density or severity, evaluate test efficiency and effectiveness
+- *resolved defects vs. number of defects*
+- *categorization of defects by numbers of percentage*, such as test items or components, releases, level or root cause
+
+## **defect prevention**  
+activities that are planned to prevent poor quality
+
+## **defect report**  
+- working product in defect workflow describing the defect, not always produced if for example the defect is expected to happen until the development is fully completed
+- purposes where defect report is used:
+  - *management of the defect report through defect lifecycle*
+  - *assessment of overall project status (especially product quality and test progress)*
+  - *assessment of product increment status in terms of product quality*
+  - *assessment of process capability*
+- defect report should always contain:
+  - *defect title with short summary of the anomaly*
+  - *detailed description and steps to reproduce the failure*
+  - *severity of the impact*
+  - *priority to fix*
+- optional, but still important data items:
+  - *unique identifier*
+  - *date/time of creation*
+  - *name of the person who discovered and reported the anomaly*
+  - *project and its SDLC state where the anomaly was discovered*
+  - *current state of the defect report*
+  - *defect owner*
+  - *change history*
+  - *references (to for example a test case or other defects)*
+- should also be used for process improvement actions:
+  - *improving defect detection effectiveness and lowering costs in each phase (introduction, detection and removal of a defect)*
+  - *targeting phases with most defects for further analysis*
+  - *analyzing defect root cause information to reveal underlying reasons for defects*
+  - *using defect location information to defect cluster analysis*
+  - *improving debugging by analyzing re-opened defects*
+  - *improving defect report creation by analyzing duplicate and rejected defects*
+  - *improving processes that reduce the the total number of defects by pro-active measures for avoiding errors upfront*
+
+## **defect workflow**  
+- process for managing a defect, an example of workflow's defect states (non-exhaustive, can also contain for example re-opened or accepted):
+  - *open/new*: initial state of defect report creation
+  - *in progress*: team is working on the defect report
+  - *rejected*: the person who processed the defect report has rejected it, reasons can include invalid information, incorrect testing or duplicate report
+  - *resolved/fixed/ready for retest*: tester runs a confirmation test (usually by reproducing the steps to reproduce the defect) to see if the defect is actually fixed
+  - *closed*: no further work is intended to be done on defect report, achievable by successful confirmation test or rejection of the defect report
+- good practices:
+  - *unified defect workflow*: used organization-wide for consistent results
+  - *separate state for duplicates and false-positives*: easier categorization and management for the future projects
+  - *only one terminal state*: reason for closure should be stated in the transition to this stage
+  - *similar naming conventions*: for example, user stories and test tasks should use same state naming to avoid confusion
+  - *consecutive defect states for different roles*
+  - *more than one outgoing transition from state to another (except terminal state)*: makes decision-making relating to the next step more profound
+  - *limited transition states*: only substantial value states should be used to avoid bloating of the process
 
 ## **Déjà vu**  
 same set of risks are raised for each project, neglecting them in the long run
@@ -13,6 +112,19 @@ starting the test execution from highest risk level
 
 ## **experience-based testing**  
 testing which relies on tester's past experiences, skills and intuition &rarr; useful for detecting test cases which can easily slip through rigid test methodologies
+
+## **external failure**  
+failure which happens after the product is shipped to the customer
+
+## **failure**  
+outcome of a defect
+
+## **four areas of competence**  
+skills of a person divided into four areas:
+- *professional competence*: skills to perform specialized tasks, such as test techniques and technological/business expertise in the application domain
+- *methodological competence*: general skills which a person can use independently in the application domain - includes analytical, conceptual and judgmental skills
+- *social competence*: skills related to communication, cooperation and conflict management in different contexts
+- *personal competence*: ability and willingness to develop oneself, attitudes and individual personality
 
 ## **functional testing**
 evaluates the functions that a component or system should perform, checking the functional completeness, correctness and appropriateness
@@ -46,6 +158,9 @@ improvement process for testing, can be used in either organizational or project
 ## **incremental development model**  
 SDLC model where the software is built gradually &rarr; for example a few features are fully developed, afterwards few more features are added and so on until the product is completely ready, requires a clear completion goal
 
+## **internal failure**  
+failure which requires reaction and happens before the product is shipped to the customer
+
 ## **iterative development model**  
 SDLC model where the development happen in smaller cycles with constant feedback loop &rarr; for example, one feature might not be fully completed in one iteration but the work is continued in the next cycle with the feedback from previous cycle's results
 
@@ -60,11 +175,34 @@ risk-based test approach is neglected when high short-term pressure to succeedin
 - test improvement model is used to improve test processes, usually on organizational level but can be applied on project level
 - the improvements are introduced by comparing the testing against external best practices
 
+## **motivation-hygiene theory**  
+distinguishes these two factors:
+- motivators which lead to growth and satisfaction:
+  - *recognizing and appreciating the team for work done (for example with incentives and other appreciative gestures)*
+  - *increased responsibility and autonomy*
+  - *meaningful and challenging tasks*
+  - *professional development*
+- hygiene factors (usually do not lead to greater satisfaction, but lack of them demotivates the team):
+  - *remuneration (salary and benefits)*
+  - *appreciative personnel practices and management style*
+  - *good working conditions*
+  - *safety as an existential need*
+  - *good interpersonal relationships, for example with co-workers and supervisors*
+
 ## **non-functional testing**  
 evaluating other than functional characteristics, "how well the system behaves", includes for example performance, compatibility, usability and security reliability
 
+## **planning poker**  
+expert-based test estimation technique used in Agile environments
+
 ## **product (quality) risk**  
 potential threats or failures that can affect the quality of your project deliverables, processes or outcomes
+
+## **product risk metrics**
+used to assess the quality of test basis and effectiveness how well the test cases cover the product risks
+- *percentage of risks of which all tests passed*
+- *percentage of risks of which some/all tests failed*
+- *percentage of risks not yet completely tested*
 
 ## **retrospective**  
 - meeting where the team reviews methods, collects lessons learned and decides the changes and actions to improve
@@ -153,6 +291,14 @@ tool for assessing the stakeholders' expertise, interest, influence and the inte
 - *defenders (low influence, high interest)*: useful for qualitative feedback, usually kept engaged through regular updates and discussions
 - *apathetics (low influence, low interest)*: can provide unique insights if for example updated on significant milestones
 
+## **team member skill assessment**  
+professional and methodological competence can be assessed by these tasks:
+- *outlining a test strategy and receiving/giving feedback on it*
+- *reviewing the test basis and communicating the findings*
+- *determining test techniques for achieving test objectives in given project context*
+- *applying test techniques appropriately*
+- *writing a test completion report with assessment of the test results*
+
 ## **test approach**  
 - not an one-size-fits-all solution: requires careful consideration towards test levels, types and techniques
 - factors to be considered when choosing the appropriate approach:
@@ -191,6 +337,52 @@ unique conditions and constraints that influence the test process, essential for
   - *treating newly identified and changed risks*
   - *establishing readiness to begin testing*
   - *granting and obtaining approval for test completion based on the exit criteria*
+ 
+## **test cost and effort metrics**
+- *residual risks for untested components*: potential impact and likelihood of defects in untested components
+- *test cost*: the actual vs. planned cost of testing
+
+## **test coverage metrics**  
+- *requirements coverage*: percentage of requirements covered by test cases
+- *product risk coverage*: percentage of identified product risks mitigated by test cases
+- *code coverage*: percentage of code statements, branches, paths or conditions executed by test cases
+
+## **test effort influencing factors**
+- *product*: quality of test basis, product size, complexity and requirements
+- *development process*: stability and maturity of organization's development processes, the used development model, material factors such as availability of test automation and tools
+- *people*: people satisfaction, skills and experience of the people involved
+- *test results*: number and severity of found defects, amount of required rework
+- *test context*: distribution of testing across subsidiaries, team composition and location, complexity of the project, the type of work
+
+## **test estimation**  
+- test management activity of estimating how much time, effort and cost a test task will take to be completed
+- three main characteristics, interconnected with each other:
+  - *effort*: can be calculated for example in person hours or story points required to finish test tasks
+  - *time*: the time required to finish the project, can be estimated for example by calendar and working day
+  - *cost*: cost is the budget of the project, includes all expenses such as test resources, tools and infrastructure
+- process:
+  - *identify the test levels, activities and tasks*
+  - *divide the testing project into main test activities within the test process*, such as test planning and execution
+  - *estimate test effort and costs needed to finish the tasks*
+ 
+## **test estimation technique**
+- either metric- (for low complexity topics) or expert-based (high complexity topics), selection is highly influenced by context of testing
+- selection factors:
+  - *estimation error*: for example, three-point estimation can be used to determine the optimistic, pessimistic and most likely estimates &rarr; can be used to calculate the expected value and its deviation
+  - *data availability*: historical data can be required for the selected technique
+  - *expert availability*: for example the Delphi method and planning poker require expert knowledge and experience to provide accurate estimations
+  - *knowledge in modeling*: some estimation techniques require mathematical models or formulas, thus also needing skill and knowledge in them
+  - *time constraints*: some estimation techniques require more time and effort than others
+ 
+## **testing benefits**  
+- qualitative (non-exhaustive):
+  - *improved reputation*
+  - *more reliable releases*
+  - *increased confidence*
+- quantitative (non-exhaustive):
+  - *found or prevented defects prior to release*
+  - *cost benefits*
+  - *reduced risk level*
 
 ## **test item**  
 work product being tested
@@ -230,11 +422,22 @@ ensuring that the test process is well-defined, adaptable to changes and results
 - model for improving test processes, consists of five maturity levels
 - all levels (except first) have test process areas and improvement goals, also contains (sub-)practices and examples
 
+## **test metrics (in test management activities)**  
+- indicators which can be used to measure testing, each metric must be defined, measured, monitored and reported
+- three categories:
+  - *project metrics*: measuring progress against project exit criteria, for example by using percentage of tests executed/passed/failed
+  - *product metrics*: measuring whether the product meets the quality expectations
+  - *process metrics*: measuring capability and effectiveness of testing process
+- test metrics in test management activities
+  - *test planning*: defining metrics that match test objectives from project test strategy
+  - *test monitoring and control*: metrics about progress of test activities, monitoring delivers the activities of control
+  - *test completion*: metrics that measure test objective achievements, such as measuring test exit criteria of test objectives
+
 ## **test monitoring**  
 ongoing activity: tracking test progress, results and deviations from planned testing, produces source material for test controlling
 
 ## **test objective**
-- should address aspects of quality and quantity and be measurable or evaluable
+- should address aspects of quality and quantity and be measurable or evaluable, answer to why we are testing something
 - examples:
   - reaching exit criteria in defined timeframe
   - complying rules, regulations and standards of specific industry
@@ -267,6 +470,13 @@ includes seven activities, can be applied in various levels such as project, pro
 - test implementation
 - test execution
 - **test completion**
+
+## **test progress**  
+the process of testing in a timeline, contains test monitoring, controlling and completion
+
+## **test progress metrics**  
+- *test execution status*: number of tests planned, implemented, executed, passed, failed, blocked and skipped
+- *test effort*: number of actual vs. planned hours of testing
 
 ## **test stakeholders** (not definitive list, test managers conduct a stakeholder analysis)  
 - *developers and development leads/managers*: for example unit testing
@@ -312,225 +522,13 @@ four different approaches for testing, test management activities for each type:
 - *black-box testing management*: ensuring that tests cover all user scenarios and business requirements, collecting the feedback from stakeholders to improve black-box testing approaches
 - *white-box testing management*: overseeing the use of code coverage tools, ensuring that technical insights are taken care in test planning process
 
+## **three-point estimation**  
+metric-based test estimation technique where most optimistic, pessimistic and likely estimates are determined to calculate the expected value and its deviation
+
 ## **TPI NEXT**  
 - model for improving test processes, consists of 16 key areas
 - each area contains a specific test process aspect, such as strategy, metrics, tools and environment
 - each area has four maturity levels, also areas contain checkpoints for maturity assessment
 
-## **anomaly**  
-situation in testing which is unexpected, usually results in defect
-
-## **defect**  
-the outcome of deviation from the actual results when comparing to expected ones
-
-## **defect report**  
-- working product in defect workflow describing the defect, not always produced if for example the defect is expected to happen until the development is fully completed
-- purposes where defect report is used:
-  - *management of the defect report through defect lifecycle*
-  - *assessment of overall project status (especially product quality and test progress)*
-  - *assessment of product increment status in terms of product quality*
-  - *assessment of process capability*
-- defect report should always contain:
-  - *defect title with short summary of the anomaly*
-  - *detailed description and steps to reproduce the failure*
-  - *severity of the impact*
-  - *priority to fix*
-- optional, but still important data items:
-  - *unique identifier*
-  - *date/time of creation*
-  - *name of the person who discovered and reported the anomaly*
-  - *project and its SDLC state where the anomaly was discovered*
-  - *current state of the defect report*
-  - *defect owner*
-  - *change history*
-  - *references (to for example a test case or other defects)*
-- should also be used for process improvement actions:
-  - *improving defect detection effectiveness and lowering costs in each phase (introduction, detection and removal of a defect)*
-  - *targeting phases with most defects for further analysis*
-  - *analyzing defect root cause information to reveal underlying reasons for defects*
-  - *using defect location information to defect cluster analysis*
-  - *improving debugging by analyzing re-opened defects*
-  - *improving defect report creation by analyzing duplicate and rejected defects*
-  - *improving processes that reduce the the total number of defects by pro-active measures for avoiding errors upfront*
-
-## **defect workflow**  
-- process for managing a defect, an example of workflow's defect states (non-exhaustive, can also contain for example re-opened or accepted):
-  - *open/new*: initial state of defect report creation
-  - *in progress*: team is working on the defect report
-  - *rejected*: the person who processed the defect report has rejected it, reasons can include invalid information, incorrect testing or duplicate report
-  - *resolved/fixed/ready for retest*: tester runs a confirmation test (usually by reproducing the steps to reproduce the defect) to see if the defect is actually fixed
-  - *closed*: no further work is intended to be done on defect report, achievable by successful confirmation test or rejection of the defect report
-- good practices:
-  - *unified defect workflow*: used organization-wide for consistent results
-  - *separate state for duplicates and false-positives*: easier categorization and management for the future projects
-  - *only one terminal state*: reason for closure should be stated in the transition to this stage
-  - *similar naming conventions*: for example, user stories and test tasks should use same state naming to avoid confusion
-  - *consecutive defect states for different roles*
-  - *more than one outgoing transition from state to another (except terminal state)*: makes decision-making relating to the next step more profound
-  - *limited transition states*: only substantial value states should be used to avoid bloating of the process
-
-## **defect lifecyle**  
-detecting (for example with static testing) and removing defects
-
-## **defect management**  
-activities beginning after observing differing actual results from expected results, allows the stakeholders to gain insight into the state of a project, and also crucial for deciding which defects will be fixed
-
-## **cross-functional defect management**  
-defect management is handled by predetermined team of different experts and quality assurance is everyone's responsibility, this defect management committee works together instead of just one or two responsibles
-
-## **defect management in Agile teams**  
-often very informal (formality varies on attributes such as geolocal distribution of team members, maturity of the team and risks of the product) and may lack defect reports, should still be done in these cases:
-- *defects block other current sprint activities and cannot be immediately fixed*
-- *defects that cannot be resolved in the same iteration*
-- *defects which require cooperation with other teams*
-- *defects must be solved by a supplier*
-- *defects where a defect report is explicitly requested*
-
-## **defect management in hybrid software development**  
-- *alignment of defect tools*: ideally every team should use the same tool and practices, but different SDLCs can prevent this &rarr; these should be synchronized
-- *prioritization of defects*: Agile teams should hold defect management meetings more often due to faster development
-- *alignment and transparency of the test plan for new development and defect fixes*: every team's work should align to the same project plan, no matter what SDLC the teams use
-
-## **test metrics (in test management activities)**  
-- indicators which can be used to measure testing, each metric must be defined, measured, monitored and reported
-- three categories:
-  - *project metrics*: measuring progress against project exit criteria, for example by using percentage of tests executed/passed/failed
-  - *product metrics*: measuring whether the product meets the quality expectations
-  - *process metrics*: measuring capability and effectiveness of testing process
-- test metrics in test management activities
-  - *test planning*: defining metrics that match test objectives from project test strategy
-  - *test monitoring and control*: metrics about progress of test activities, monitoring delivers the activities of control
-  - *test completion*: metrics that measure test objective achievements, such as measuring test exit criteria of test objectives
- 
-## **product risk metrics**
-used to assess the quality of test basis and effectiveness how well the test cases cover the product risks
-- *percentage of risks of which all tests passed*
-- *percentage of risks of which some/all tests failed*
-- *percentage of risks not yet completely tested*
-
-## **defect metrics**  
-used to monitor defect detection and resolution, identify areas of different defect density or severity, evaluate test efficiency and effectiveness
-- *resolved defects vs. number of defects*
-- *categorization of defects by numbers of percentage*, such as test items or components, releases, level or root cause
-
-## **test progress metrics**  
-- *test execution status*: number of tests planned, implemented, executed, passed, failed, blocked and skipped
-- *test effort*: number of actual vs. planned hours of testing
-
-## **test coverage metrics**  
-- *requirements coverage*: percentage of requirements covered by test cases
-- *product risk coverage*: percentage of identified product risks mitigated by test cases
-- *code coverage*: percentage of code statements, branches, paths or conditions executed by test cases
-
-## **test cost and effort metrics**
-- *residual risks for untested components*: potential impact and likelihood of defects in untested components
-- *test cost*: the actual vs. planned cost of testing
-
-## **test estimation**  
-- test management activity of estimating how much time, effort and cost a test task will take to be completed
-- three main characteristics, interconnected with each other:
-  - *effort*: can be calculated for example in person hours or story points required to finish test tasks
-  - *time*: the time required to finish the project, can be estimated for example by calendar and working day
-  - *cost*: cost is the budget of the project, includes all expenses such as test resources, tools and infrastructure
-- process:
-  - *identify the test levels, activities and tasks*
-  - *divide the testing project into main test activities within the test process*, such as test planning and execution
-  - *estimate test effort and costs needed to finish the tasks*
- 
-## ** test effort influencing factors**
-- *product*: quality of test basis, product size, complexity and requirements
-- *development process*: stability and maturity of organization's development processes, the used development model, material factors such as availability of test automation and tools
-- *people*: people satisfaction, skills and experience of the people involved
-- *test results*: number and severity of found defects, amount of required rework
-- *test context*: distribution of testing across subsidiaries, team composition and location, complexity of the project, the type of work
-
-## **test estimation technique**
-- either metric- (for low complexity topics) or expert-based (high complexity topics), selection is highly influenced by context of testing
-- selection factors:
-  - *estimation error*: for example, three-point estimation can be used to determine the optimistic, pessimistic and most likely estimates &rarr; can be used to calculate the expected value and its deviation
-  - *data availability*: historical data can be required for the selected technique
-  - *expert availability*: for example the Delphi method and planning poker require expert knowledge and experience to provide accurate estimations
-  - *knowledge in modeling*: some estimation techniques require mathematical models or formulas, thus also needing skill and knowledge in them
-  - *time constraints*: some estimation techniques require more time and effort than others
-
-## **test objective**  
-answer to why we are testing something
-
-## **planning poker**  
-expert-based test estimation technique used in Agile environments
-
-## **three-point estimation**  
-metric-based test estimation technique where most optimistic, pessimistic and likely estimates are determined to calculate the expected value and its deviation
-
 ## **Wideband Delphi**  
 expert-based test estimation technique used in sequential development models
-
-## **test progress**  
-the process of testing in a timeline, contains test monitoring, controlling and completion
-
-## **failure**  
-outcome of a defect
-
-## **testing benefits**  
-- qualitative (non-exhaustive):
-  - *improved reputation*
-  - *more reliable releases*
-  - *increased confidence*
-- quantitative (non-exhaustive):
-  - *found or prevented defects prior to release*
-  - *cost benefits*
-  - *reduced risk level*
- 
-## **average savings per defect**  
-cost of quality per defect, formula: average of external failure costs - (average appraisal costs + average of internal failure costs), example:
-- *average appraisal costs per defect*: $500
-- *average of internal failure costs per defect*: $200
-- *average of external failure costs per defect*: $4000
-&rarr; $4000 - ($500 + $200) = $3300
-
-## **appraisal**  
-expense for preventing a defect to never reach a customer
-
-## **cost of quality**  
-quantified total cost of quality-related efforts and defects, four categories of project and operational costs (usually appraisal and internal failure costs are much lower than external failure costs):
-- *defect prevention costs*: all activities related to preventing poor quality, for example developer training costs regarding maintainable code or reviewing the test basis as early as possible
-- *appraisal costs*: all activities related to defect detection, such as static and dynamic testing and reviewing work products
-- *internal failure costs*: all costs related to reactive activities, such as fixing defects and proving workarounds
-- *external failure costs*: all costs which have emerged to remedy for example quality issues afterwards, such as legal costs or supporting because of defective product being delivered
-
-## **defect prevention**  
-
-## **external failure**  
-failure which happens after the product is shipped to the customer
-
-## **internal failure**  
-failure which requires reaction and happens before the product is shipped to the customer
-
-## **four areas of competence**  
-skills of a person divided into four areas:
-- *professional competence*: skills to perform specialized tasks, such as test techniques and technological/business expertise in the application domain
-- *methodological competence*: general skills which a person can use independently in the application domain - includes analytical, conceptual and judgmental skills
-- *social competence*: skills related to communication, cooperation and conflict management in different contexts
-- *personal competence*: ability and willingness to develop oneself, attitudes and individual personality
-
-## **team member skill assessment**  
-professional and methodological competence can be assessed by these tasks:
-- *outlining a test strategy and receiving/giving feedback on it*
-- *reviewing the test basis and communicating the findings*
-- *determining test techniques for achieving test objectives in given project context*
-- *applying test techniques appropriately*
-- *writing a test completion report with assessment of the test results*
-
-## **motivation-hygiene theory**  
-distinguishes these two factors:
-- motivators which lead to growth and satisfaction:
-  - *recognizing and appreciating the team for work done (for example with incentives and other appreciative gestures)*
-  - *increased responsibility and autonomy*
-  - *meaningful and challenging tasks*
-  - *professional development*
-- hygiene factors (usually do not lead to greater satisfaction, but lack of them demotivates the team):
-  - *remuneration (salary and benefits)*
-  - *appreciative personnel practices and management style*
-  - *good working conditions*
-  - *safety as an existential need*
-  - *good interpersonal relationships, for example with co-workers and supervisors*
