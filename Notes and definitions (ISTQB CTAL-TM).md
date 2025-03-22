@@ -1,9 +1,9 @@
 # Notes and definitions / ISTQB Certified Tester Advanced Level Test Management (CTAL-TM) v3.0
 ## **analytical-based test process improvement**  
-identifying problems in testing by using the data from the project or team itself &rarr; deriving the improvements from analysis, many times quantitative approaches are used to identify problems as using only qualitative approaches can result in wrong recommendations which is not supported by the data
+identifying problems in testing by using the data from the project or team itself &rarr; deriving the improvements from analysis, many times quantitative approaches are used to identify problems as using only qualitative approaches can result in wrong recommendations not supported by the data
 
 ## **anomaly**  
-situation in testing which is unexpected, usually results in defect
+unexpected situation in testing, usually results in defect
 
 ## **appraisal**  
 expense for preventing a defect to never reach a customer
@@ -23,7 +23,7 @@ quantified total cost of quality-related efforts and defects, four categories of
 - *defect prevention costs*: all activities related to preventing poor quality, for example developer training costs regarding maintainable code or reviewing the test basis as early as possible
 - *appraisal costs*: all activities related to defect detection, such as static and dynamic testing and reviewing work products
 - *internal failure costs*: all costs related to reactive activities, such as fixing defects and proving workarounds
-- *external failure costs*: all costs which have emerged to remedy for example quality issues afterwards, such as legal costs or supporting because of defective product being delivered
+- *external failure costs*: all costs which have emerged to remedy for example quality issues afterwards, such as legal costs or supporting because defective product was delivered
 
 ## **cross-functional defect management**  
 defect management is handled by predetermined team of different experts and quality assurance is everyone's responsibility, this defect management committee works together instead of just one or two responsibles
@@ -35,7 +35,7 @@ the outcome of deviation from the actual results when comparing to expected ones
 detecting (for example with static testing) and removing defects
 
 ## **defect management**  
-activities beginning after observing differing actual results from expected results, allows the stakeholders to gain insight into the state of a project, and also crucial for deciding which defects will be fixed
+activities beginning after observing differing actual results from expected results, allows the stakeholders to gain insight into the state of a project, activity also crucial for deciding which defects will be fixed
 
 ## **defect management in Agile teams**  
 often very informal (formality varies on attributes such as geolocal distribution of team members, maturity of the team and risks of the product) and may lack defect reports, should still be done in these cases:
@@ -48,11 +48,11 @@ often very informal (formality varies on attributes such as geolocal distributio
 ## **defect management in hybrid software development**  
 - *alignment of defect tools*: ideally every team should use the same tool and practices, but different SDLCs can prevent this &rarr; these should be synchronized
 - *prioritization of defects*: Agile teams should hold defect management meetings more often due to faster development
-- *alignment and transparency of the test plan for new development and defect fixes*: every team's work should align to the same project plan, no matter what SDLC the teams use
+- *alignment and transparency of the test plan for new development and defect fixes*: every team's work should align to the same project plan, no matter what SDLCs the teams use
 
 ## **defect metrics**  
 used to monitor defect detection and resolution, identify areas of different defect density or severity, evaluate test efficiency and effectiveness
-- *resolved defects vs. number of defects*
+- *resolved defects vs. total number of defects*
 - *categorization of defects by numbers of percentage*, such as test items or components, releases, level or root cause
 
 ## **defect prevention**  
@@ -92,7 +92,7 @@ activities that are planned to prevent poor quality
 - process for managing a defect, an example of workflow's defect states (non-exhaustive, can also contain for example re-opened or accepted):
   - *open/new*: initial state of defect report creation
   - *in progress*: team is working on the defect report
-  - *rejected*: the person who processed the defect report has rejected it, reasons can include invalid information, incorrect testing or duplicate report
+  - *rejected*: the person who processed the defect report has rejected it, reasons can include for example invalid information, incorrect testing or duplicate report
   - *resolved/fixed/ready for retest*: tester runs a confirmation test (usually by reproducing the steps to reproduce the defect) to see if the defect is actually fixed
   - *closed*: no further work is intended to be done on defect report, achievable by successful confirmation test or rejection of the defect report
 - good practices:
@@ -114,7 +114,7 @@ starting the test execution from highest risk level
 testing which relies on tester's past experiences, skills and intuition &rarr; useful for detecting test cases which can easily slip through rigid test methodologies
 
 ## **external failure**  
-failure which happens after the product is shipped to the customer
+failure that happens after the product is shipped to the customer
 
 ## **failure**  
 outcome of a defect
@@ -134,9 +134,9 @@ evaluates the functions that a component or system should perform, checking the 
 - measurement goals contain a quality aspect of an object that is measured for a particular purpose, perspective and context
 - these goals are then formed into questions defining the quality aspect from stakeholder point of view, after which the metrics are selected to provide necessary information to answer the questions
 - example:
-  - goal, an object or entity: measurements include products, processes and resources
-  - question used to assess the goals: is the current performance satisfactory, is it improving, is the improvement enough?
-  - metric, every question is assessed with the metrics: for example, lines of code, module/program size, level of user satisfaction
+  - *goal, an object or entity*: measurements include products, processes and resources
+  - *question used to assess the goals*: is the current performance satisfactory, is it improving, is the improvement enough?
+  - *metric, every question is assessed with the metrics*: for example, lines of code, module/program size, level of user satisfaction
 
 ## **hybrid software development model**  
 integrates elements from traditional sequential approaches and Agile practices
@@ -315,13 +315,10 @@ professional and methodological competence can be assessed by these tasks:
 - usually occurs at project milestones, such as release or the end of an iteration
 - unresolved defects are handled by change requests or product backlog items
 - test completion activities:
-  - *create and approve the test completion report*:
-    - ensuring all testing has been done and test objectives are met
-    - collecting the relevant information from various documents created in the test process &rarr; test completion report which is approved by all relevant stakeholders
+  - *create and approve the test completion report*: ensuring all testing has been done and test objectives are met, collecting the relevant information from various documents created in the test process &rarr; test completion report which is approved by all relevant stakeholders
   - *archive testware*: emphasis on reusable testware for future projects, temporary archival for all testware in configuration management system
   - *handover testware*: delivering work products to those who need them
-  - *perform all necessary tasks to clean the test environment and to restore it to a pre-defined
-state*
+  - *perform all necessary tasks to clean the test environment and to restore it to a pre-defined state*
   - *perform/collect/document lessons learned*: done in retrospectives
 
 ## **test context**  
@@ -375,11 +372,11 @@ unique conditions and constraints that influence the test process, essential for
   - *time constraints*: some estimation techniques require more time and effort than others
  
 ## **testing benefits**  
-- qualitative (non-exhaustive):
+- qualitative (non-exhaustive list):
   - *improved reputation*
   - *more reliable releases*
   - *increased confidence*
-- quantitative (non-exhaustive):
+- quantitative (non-exhaustive list):
   - *found or prevented defects prior to release*
   - *cost benefits*
   - *reduced risk level*
@@ -456,13 +453,13 @@ describes the objectives, resources and processes of a test project, should alwa
   - *defining test approach, estimating and allocating test resources*:
     - approach: basis on organizational test strategy, regulatory standards or any constraints given by the project
     - resources: making sure that required test resources such as staff, tools, environments and data are provided for test activities
-  - **establish the test plan**: plan accepted by all stakeholders
+  - *establish the test plan*: plan accepted by all stakeholders
  
 ## **test policy**  
 high-level document of the organization &rarr; defines testing vision, goals and principles in organizational level
 
 ## **test process**  
-includes seven activities, can be applied in various levels such as project, program or portfolio, each level has its own test plan (**bolded** are emphasised by the syllabus):  
+includes seven activities, can be applied in various levels such as project, program or portfolio, each level has its own test plan (**bolded** ones are emphasised by the syllabus):  
 - **test planning**
 - **test monitoring and control**  
 - test analysis
@@ -478,7 +475,7 @@ the process of testing in a timeline, contains test monitoring, controlling and 
 - *test execution status*: number of tests planned, implemented, executed, passed, failed, blocked and skipped
 - *test effort*: number of actual vs. planned hours of testing
 
-## **test stakeholders** (not definitive list, test managers conduct a stakeholder analysis)  
+## **test stakeholders (not a definitive list, test managers conduct a stakeholder analysis)**  
 - *developers and development leads/managers*: for example unit testing
 - *testers, test leads/managers*: individuals who prepare testware, for example developing test plans and contributing to the testing process
 - *project managers, product owners and business users*: stakeholders who specify requirements and requested level of quality, review work products and make decisions based on test results
@@ -486,7 +483,7 @@ the process of testing in a timeline, contains test monitoring, controlling and 
 - *customers and users*: customers purchase the product, users directly utilize it
 
 ## **test strategy**  
-describes the approach to testing in specific context to meet the organization's (quality and testing) objectives
+describes the approach to testing in specific context to meet the organization's quality and testing objectives
 
 ## **test tool**  
 - either business (commercial, open source or custom type) or technical tools, administrated by test manager
@@ -497,7 +494,7 @@ describes the approach to testing in specific context to meet the organization's
 made to ensure the positive ROI, must consider the (non-)recurring activities and costs such as initial or recurring licensing costs, integrating, training and maintenance - also opportunity costs (time spent on the tool-related activities instead of spending it on the actual testing) must be considered
 
 ## **test tool decision aspects**  
-- *regulations and security*: for example, commercial tools could be best for safety-critical software as they usually met the required standards and certifications
+- *regulations and security*: for example, commercial tools could be best for safety-critical software as they usually meet the required standards and certifications
 - *financial aspects*: the tool can have one-time or running license costs, also training and maintenance costs must be considered
 - *stakeholder requirements*: custom tools most likely meet all the requirements by relevant stakeholders if commercial and open-source tools are not sufficient enough
 - *existing software landscape and tool strategy*: locked vendors, integrated systems and regulations might dictate what tools are appropriate for the organization
