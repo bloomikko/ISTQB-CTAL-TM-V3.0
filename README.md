@@ -3,7 +3,7 @@ In this repository, you can find my personal notes and definitions for the ISTQB
 
 Please note that this repository's information is based on **v3.0** syllabus &rarr; it can and most likely will alter in the future - these materials most likely will become obsolete over time. I still hope these notes offer some assistance - good luck with the exam!
 
-**[ISTQB's resources, including syllabus and a practice exam](https://www.istqb.org/certifications/certified-tester-advanced-level-test-management-ctal-tm-v3-0/)**
+**[ISTQB's resources, including syllabus and a practice exam](https://www.istqb.org/certifications/certified-tester-advanced-level-test-management-ctal-tm-v3-0/)**  
 **[ASTQB's sample exam](https://astqb.org/certifications/istqb-advanced-level-test-manager-certification/)**
 
 ## Practice exams
